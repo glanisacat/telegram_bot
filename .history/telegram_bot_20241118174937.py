@@ -21,7 +21,7 @@ def send_message():
 schedule.every().day.at("17:20").do(send_message)
 
 if __name__ == "__main__":
-    print("Running script...")
+    print("Бот запущен и ожидает выполнения задач...")
     while True:
         schedule.run_pending()  
         time.sleep(1)  

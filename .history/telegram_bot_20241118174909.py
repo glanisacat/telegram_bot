@@ -14,14 +14,14 @@ def send_message():
     }
     response = requests.post(url, json=payload)
     if response.status_code == 200:
-        print("success!")
+        print("msg was se!")
     else:
-        print(f"error: {response.status_code}, {response.text}")
+        print(f"Ошибка: {response.status_code}, {response.text}")
 
 schedule.every().day.at("17:20").do(send_message)
 
 if __name__ == "__main__":
-    print("Running script...")
+    print("Бот запущен и ожидает выполнения задач...")
     while True:
         schedule.run_pending()  
         time.sleep(1)  
