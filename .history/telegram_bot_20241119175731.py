@@ -1,7 +1,8 @@
 import requests
 
+# Задаём токен, список ID чатов и сообщение
 TOKEN = "7755374882:AAFlEOgJhCL49CqZQ2QCdRPvhLEm3iB-JxI"
-CHAT_IDS = ["947408005", "634398235"]
+CHAT_IDS = ["947408005", "634398235"]  # Добавьте ID пользователей сюда
 MESSAGE = "Выпей таблетооосиик"
 
 def send_message(chat_id):
@@ -18,5 +19,5 @@ def send_message(chat_id):
 
 if __name__ == "__main__":
     print("Running script...")
-    for chat_id in CHAT_IDS: 
+    for chat_id in CHAT_IDS:  # Цикл для каждого ID в списке
         send_message(chat_id)

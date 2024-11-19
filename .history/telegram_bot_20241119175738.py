@@ -1,7 +1,7 @@
 import requests
 
 TOKEN = "7755374882:AAFlEOgJhCL49CqZQ2QCdRPvhLEm3iB-JxI"
-CHAT_IDS = ["947408005", "634398235"]
+CHAT_IDS = ["947408005", "634398235"]  # Добавьте ID пользователей сюда
 MESSAGE = "Выпей таблетооосиик"
 
 def send_message(chat_id):

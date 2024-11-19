@@ -2,8 +2,8 @@ name: Run Telegram Bot
 
 on:
   schedule:
-    - cron: '20 14 * * *' 
-  workflow_dispatch:
+    - cron: '20 14 * * *'  # Запускается ежедневно в 14:20 UTC
+  workflow_dispatch: # Возможность запуска вручную
 
 jobs:
   run-telegram-bot:
