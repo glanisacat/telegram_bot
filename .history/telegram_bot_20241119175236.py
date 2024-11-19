@@ -1,5 +1,6 @@
 import requests
 
+# Задаём токен, ID чата и сообщение
 TOKEN = "7755374882:AAFlEOgJhCL49CqZQ2QCdRPvhLEm3iB-JxI"
 CHAT_ID = "947408005"
 MESSAGE = "Выпей таблетооосиик"
