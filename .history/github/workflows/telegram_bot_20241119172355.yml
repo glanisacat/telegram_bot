@@ -1,0 +1,25 @@
+name: Run Telegram Bot
+
+on:
+  schedule:
+    - cron: '20 14 * * *' # Запуск каждый день в 14:20 UTC (17:20 по Москве, если UTC+3)
+
+jobs:
+  run-telegram-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Telegram Bot Script
+        run: python telegram_bot.py
